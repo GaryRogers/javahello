@@ -1,6 +1,10 @@
 # Java Hello World in a Kubernetes Container
 
+Just a simple little jva console app to heartbeat to the console. Used for testing Kubernetes, and Application Performance Monitoring of Kubernetes. If you need to have a continer running to troubleshoot monitoring this will fill the bill while consuming relatively small amounts of resources.
+
 # Building
+
+All commands are for Windows Powershell. Most will work in `bash`, except the `$timestamp` function. If you are working in `bash` you'll need to translate that.
 
 ## Login to Docker Hub
 
