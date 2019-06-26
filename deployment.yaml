@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: javahello
+  labels:
+    app: javahello
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: javahello
+  template:
+    metadata:
+      labels:
+        app: javahello
+    spec:
+      containers:
+      - name: javahello
+        image: localhost:5000/javahello:latest
+        resources:
+          limits:
+            memory: "100Mi"
+            cpu: "100m"
