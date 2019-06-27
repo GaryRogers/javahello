@@ -37,7 +37,7 @@ docker push localhost:5000/javahello:latest
 ## Deploy to Kubernetes
 
 ```powershell
-kubectl apply -d deployment.yaml
+kubectl apply -f deployment.yaml
 ```
 
 ## Check that the Pod is running
